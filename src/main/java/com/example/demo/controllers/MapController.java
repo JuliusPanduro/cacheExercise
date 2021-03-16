@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 public class MapController {
-    Cache cache = new Cache(15);
+    Cache cache = new Cache(60); //TTL in seconds
     Database database = new Database();
 
     @GetMapping("/")
